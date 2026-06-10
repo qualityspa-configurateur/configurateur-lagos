@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CONFIGUREZ VOTRE SPA LAGOS INTENSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="https://qualityspa.fr/products/spa-3-places-lagos-serie-intense?_pos=2&_psq=lagos&_ss=e&_v=1.0" target="_blank">
+        <img src="images/logo-quality-spa.png" alt="Quality Spa" id="logo">
+    </a>
+
+    <main class="configurateur">
+
+        <h1>CONFIGUREZ VOTRE SPA LAGOS INTENSE</h1>
+
+        <div class="section-titre">Coque</div>
+        <div class="boutons">
+            <button class="coque-btn actif" onclick="changerCoque('blanc-nuage', this)">Blanc Nuage</button>
+            <button class="coque-btn" onclick="changerCoque('noir-orage', this)">Noir Orage</button>
+            <button class="coque-btn" onclick="changerCoque('granite', this)">Granité</button>
+            <button class="coque-btn" onclick="changerCoque('odysse', this)">Odyssé</button>
+        </div>
+
+        <div class="section-titre">Tablier</div>
+        <div class="boutons">
+            <button class="tablier-btn actif" onclick="changerTablier('bois-teck', this)">Bois Teck</button>
+            <button class="tablier-btn" onclick="changerTablier('bois-gris', this)">Bois Gris</button>
+            <button class="tablier-btn" onclick="changerTablier('gris-anthracite', this)">Gris Anthracite</button>
+            <button class="tablier-btn" onclick="changerTablier('bois-ancien', this)">Bois Ancien</button>
+            <button class="tablier-btn" onclick="changerTablier('blanc-lave', this)">Blanc Lavé</button>
+        </div>
+
+        <div class="image-container">
+            <img id="spa-image" src="images/lagos-blanc-nuage-bois-teck.png" alt="Spa Lagos">
+        </div>
+
+        <button id="download-btn" onclick="telechargerVisuel()">Télécharger ce visuel</button>
+
+        <p id="mention">Visuel non contractuel – rendu indicatif des coloris.</p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
