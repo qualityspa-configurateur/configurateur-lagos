@@ -31,10 +31,15 @@ function mettreAJourConfigurateur() {
 
     image.classList.add("fade");
 
-    setTimeout(() => {
-        image.src = nouvelleImage;
-        image.classList.remove("fade");
-    }, 200);
+    const imagePrechargee = new Image();
+    imagePrechargee.src = nouvelleImage;
+
+    imagePrechargee.onload = function () {
+        setTimeout(() => {
+            image.src = nouvelleImage;
+            image.classList.remove("fade");
+        }, 150);
+    };
 }
 
 function telechargerVisuel() {
