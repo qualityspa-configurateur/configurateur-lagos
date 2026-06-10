@@ -27,7 +27,7 @@ function changerTablier(tablier, boutonClique) {
 
 function mettreAJourConfigurateur() {
     const image = document.getElementById("spa-image");
-    const nouvelleImage = "images/lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
+    const nouvelleImage = "lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
 
     image.classList.add("fade");
 
@@ -38,7 +38,7 @@ function mettreAJourConfigurateur() {
 }
 
 function telechargerVisuel() {
-    const cheminImage = "images/lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
+    const cheminImage = "lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
 
     fetch(cheminImage)
         .then(response => response.blob())
