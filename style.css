@@ -84,7 +84,7 @@ button.actif {
 }
 
 #spa-image.fade {
-    opacity: 0.35;
+    opacity: 0;
 }
 
 .action-buttons {
@@ -248,7 +248,7 @@ h1::after {
     background: linear-gradient(
         to right,
         transparent,
-        #7bb8e8,
+         #7bb8e8,
         transparent
     );
 }
