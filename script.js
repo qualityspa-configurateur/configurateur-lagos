@@ -9,7 +9,6 @@ function changerCoque(coque, boutonClique) {
     });
 
     boutonClique.classList.add("actif");
-
     mettreAJourConfigurateur();
 }
 
@@ -21,7 +20,6 @@ function changerTablier(tablier, boutonClique) {
     });
 
     boutonClique.classList.add("actif");
-
     mettreAJourConfigurateur();
 }
 
@@ -49,7 +47,7 @@ function telechargerVisuel() {
     fetch(cheminImage)
         .then(response => response.blob())
         .then(blob => {
-            const url = window.URL.createObjectURL(blob);
+            const url = URL.createObjectURL(blob);
             const lien = document.createElement("a");
 
             lien.href = url;
@@ -60,6 +58,6 @@ function telechargerVisuel() {
             lien.click();
             document.body.removeChild(lien);
 
-            window.URL.revokeObjectURL(url);
+            URL.revokeObjectURL(url);
         });
 }
