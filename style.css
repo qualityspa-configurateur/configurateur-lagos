@@ -80,11 +80,11 @@ button.actif {
     width: 1000px;
     height: auto;
     max-width: 92vw;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.7s ease;
 }
 
 #spa-image.fade {
-    opacity: 0;
+    opacity: 0 !important;
 }
 
 .action-buttons {

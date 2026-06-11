@@ -36,7 +36,7 @@ function mettreAJourConfigurateur() {
         setTimeout(() => {
             image.src = nouvelleImage;
             image.classList.remove("fade");
-        }, 400);
+        }, 700);
     };
 }
 
