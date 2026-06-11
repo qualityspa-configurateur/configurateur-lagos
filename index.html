@@ -2,13 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONFIGUREZ VOTRE SPA LAGOS INTENSE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <img src="logo-quality-spa.png" alt="Quality Spa" id="logo">
+    <img src="images/logo-quality-spa.png" alt="Quality Spa" id="logo">
 
     <main class="configurateur">
 
@@ -34,12 +35,24 @@
         </div>
 
         <div class="image-container">
-            <img id="spa-image" src="lagos-blanc-nuage-bois-teck.png" alt="Spa Lagos">
+            <img id="spa-image" src="images/lagos-blanc-nuage-bois-teck.png" alt="Spa Lagos">
         </div>
 
-        <button id="download-btn" onclick="telechargerVisuel()">Télécharger ce visuel</button>
+        <div class="action-buttons">
 
-        <p id="mention">Visuel non contractuel – rendu indicatif des coloris.</p>
+            <a href="https://drive.google.com/file/d/1MVJ3Q6-EwVIXIAMGl6LxEB477RfuhQKP/view?usp=sharing"
+               target="_blank"
+               class="action-btn">
+                Voir des réalisations clients
+            </a>
+
+            <button id="download-btn" class="action-btn" onclick="telechargerVisuel()">
+                Télécharger ce visuel
+            </button>
+
+        </div>
+
+        <p id="mention">Visuel non contractuel — rendu indicatif des coloris.</p>
 
     </main>
 

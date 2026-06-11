@@ -27,7 +27,7 @@ function changerTablier(tablier, boutonClique) {
 
 function mettreAJourConfigurateur() {
     const image = document.getElementById("spa-image");
-    const nouvelleImage = "lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
+    const nouvelleImage = "images/lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
 
     image.classList.add("fade");
 
@@ -38,26 +38,28 @@ function mettreAJourConfigurateur() {
         setTimeout(() => {
             image.src = nouvelleImage;
             image.classList.remove("fade");
-        }, 150);
+        }, 400);
     };
 }
 
 function telechargerVisuel() {
-    const cheminImage = "lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
+    const cheminImage = "images/lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
+    const nomFichier = "lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
 
     fetch(cheminImage)
         .then(response => response.blob())
         .then(blob => {
-            const url = URL.createObjectURL(blob);
+            const url = window.URL.createObjectURL(blob);
             const lien = document.createElement("a");
 
             lien.href = url;
-            lien.download = "lagos-" + coqueActuelle + "-" + tablierActuel + ".png";
+            lien.download = nomFichier;
+            lien.style.display = "none";
 
             document.body.appendChild(lien);
             lien.click();
             document.body.removeChild(lien);
 
-            URL.revokeObjectURL(url);
+            window.URL.revokeObjectURL(url);
         });
 }

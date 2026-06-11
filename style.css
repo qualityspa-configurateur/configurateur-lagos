@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    margin: 0 0 14px;
+    margin: 0 0 18px;
     font-size: 42px;
     letter-spacing: 1px;
     color: #6bb6e8;
@@ -67,39 +67,98 @@ button.actif {
 }
 
 .image-container {
-    margin-top: 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-top: 14px;
 }
 
 #spa-image {
+    display: block;
     width: 1000px;
     height: auto;
-    max-width: 92%;
-    border-radius: 18px;
-    background: white;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
-    opacity: 1;
-   transition: opacity 0.15s ease;
+    max-width: 92vw;
+    transition: opacity 0.4s ease;
 }
 
 #spa-image.fade {
     opacity: 0;
 }
 
-#download-btn {
-    margin-top: 18px;
-    background: #6bb6e8;
-    border-color: #6bb6e8;
-    color: white;
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-#download-btn:hover {
-    background: #4fa6dd;
-    border-color: #4fa6dd;
+.action-btn {
+    display: inline-block;
+    background: #6bb6e8;
     color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Glacial Indifference", Arial, sans-serif;
+    font-size: 15px;
+    min-width: 220px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background: #4da7df;
+    color: white;
+    transform: translateY(-2px);
 }
 
 #mention {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 13px;
     color: #777;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 120px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+
+    .configurateur {
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.1;
+        margin: 8px 10px 18px;
+    }
+
+    .section-titre {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        min-width: auto;
+        padding: 11px 14px;
+    }
+
+    #spa-image {
+        max-width: 96vw;
+    }
+
+    .action-btn {
+        font-size: 14px;
+        min-width: 210px;
+    }
 }
